@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen"> true</item>
+    </style>
+    <style name="RippleWhite">
+        <item name="android:colorControlHighlight">#0073df</item>
+        <item name="android:radius">50dp</item>
+    </style>
+    <declare-styleable name="RippleView">
+        <attr name="pressed" format="reference"/>
+        <attr name="normal" format="reference"/>
+    </declare-styleable>
+    <style name="MyDatePicker" parent="@android:style/Widget.Holo.DatePicker">
+        <item name="android:textColorPrimary">#09467f</item>
+    </style>
+</resources>

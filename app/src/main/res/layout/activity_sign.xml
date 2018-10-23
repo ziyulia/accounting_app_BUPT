@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="@drawable/signup"
+    tools:context="com.example.yuayuayu.money.LoginActivity">
+
+    <Button
+        android:id="@+id/signup"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="243dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button"
+        android:text="Sign Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="?android:attr/colorButtonNormal"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:src="@drawable/u"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="242dp"
+                android:layout_height="38dp"
+                android:background="#00000000"
+                android:hint="Username"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#f3dbdbdb"
+                android:textColorHint="#f3dbdbdb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dip"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/p" />
+
+            <EditText
+                android:id="@+id/pass1"
+                android:layout_width="239dp"
+                android:layout_height="41dp"
+                android:background="#00000000"
+                android:hint="Passward"
+
+                android:imeOptions="actionNext"
+                android:inputType="numberPassword"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#f3dbdbdb"
+                android:textColorHint="#f3dbdbdb"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dip"
+            android:background="#ffffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/p" />
+
+            <EditText
+                android:id="@+id/pass2"
+                android:layout_width="239dp"
+                android:layout_height="41dp"
+                android:background="#00000000"
+                android:hint="Passward"
+
+                android:imeOptions="actionDone"
+                android:inputType="numberPassword"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#f3dbdbdb"
+                android:textColorHint="#f3dbdbdb"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dip"
+            android:background="#ffffff"/>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
